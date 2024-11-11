@@ -8,7 +8,7 @@ Założenia:
 aktualnego okrążenia
 - Cztery przyciski
   - [x] Start - rozpoczyna odliczanie w obydwu licznikach - każdy zwiększa swoją wartość co 0,1 sekundy - zdecydowałem, że czas będzie podawany z dokładnością do 0,01s - tak jak reprezentuje to prawdziwy stoper (aplikacja jest mała, nie ma problemów z wydajnością)
-  - [ ] Stop:
+  - [x] Stop:
     - [x] zatrzymuje działanie liczników
     - [x] po naciśnięciu na stop liczniki oraz tabela zostają ukryte, zamiast nich pojawia się podsumowanie z łącznym czasem, średnim czasem okrążenia, najszybszym okrążeniem, najwolniejszym okrążeniem i łączną liczbą okrążeń
   - [x] Reset - Resetuje cały proces - resetuje stan liczników do 0 bez zatrzymywania - cały czas odliczają, czyszczona jest również tablica okrążeń
