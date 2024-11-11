@@ -1,30 +1,19 @@
-# React + TypeScript + Vite
+# Projekt Stopwatch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Założenia:
+- [x] przygotować repo na github
+- [x] stworzyć nowy projekt przy pomocy Vite korzystając z TypeScript
+- [x] Przygotować komponent odpowiadający za wyświetlanie czasu sformatowanego w sposób mm:ss:ms
+- [x] Strona ma zawierać dwa liczniki - jeden odpowiadający za łączny liczony czas, a drugi odmierzający czas
+aktualnego okrążenia
+- Cztery przyciski
+  - [x] Start - rozpoczyna odliczanie w obydwu licznikach - każdy zwiększa swoją wartość co 0,1 sekundy - zdecydowałem, że czas będzie podawany z dokładnością do 0,01s - tak jak reprezentuje to prawdziwy stoper (aplikacja jest mała, nie ma problemów z wydajnością)
+  - [ ] Stop:
+    - [x] zatrzymuje działanie liczników
+    - [x] po naciśnięciu na stop liczniki oraz tabela zostają ukryte, zamiast nich pojawia się podsumowanie z łącznym czasem, średnim czasem okrążenia, najszybszym okrążeniem, najwolniejszym okrążeniem i łączną liczbą okrążeń
+  - [x] Reset - Resetuje cały proces - resetuje stan liczników do 0 bez zatrzymywania - cały czas odliczają, czyszczona jest również tablica okrążeń
+  - [x] Lap - resetuje licznik określający czas okrążenia i dodaje informację o numerze okrążenia i jego czasie do tabeli wyników, główny licznik cały czas liczy!
+- [x] Przyciski powinny mieć różne kolory - w zależności od istotności danej akcji którą przycisk wykonuje
+- [x] Aplikacja powinna być podzielona na komponenty (przykład komponentów został podany w dokumentacji do ćwiczenia, jednak wykonałem nieco inny podział)
+- [x] Strona powinna być ostylowana w dowolny sposób - wykorzystano SCSS
+- [x] Aplikacja powinna działać dobrze z włączonym StrictMode

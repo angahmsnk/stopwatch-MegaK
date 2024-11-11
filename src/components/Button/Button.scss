@@ -1,0 +1,12 @@
+.button {
+    margin: 20px 0;
+    padding: 15px 0;
+    width: 25%;
+    border-radius: 10px;
+    text-transform: uppercase;
+
+    &--start {background-color: rgb(61, 255, 61);}
+    &--stop {background-color: rgb(255, 73, 73);}
+    &--reset {background-color: rgb(255, 255, 74);}
+    &--lap {background-color: rgb(59, 59, 255);}
+}
